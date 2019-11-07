@@ -1,0 +1,276 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: #033f97;
+    }
+    
+    .screen {
+        position: relative;
+        top: 150px;
+        left: 500px;
+        height: 400px;
+        width: 300px;
+        background: aqua;
+        box-shadow: 2px 2px 20px aqua;
+    }
+    
+    .parts {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 390px;
+        width: 290px;
+        background-image: url(images/haunted-house-2839157_640.jpg);
+    }
+    
+    p {
+        position: relative;
+        top: 10px;
+        left: 31%;
+        transform: translate(-10px, -31%);
+        -webkit-transform: translate(-10px, -31%);
+        -moz-transform: translate(-10px, -31%);
+        -ms-transform: translate(-10px, -31%);
+        -o-transform: translate(-10px, -31%);
+        color: crimson;
+        font-size: 20px;
+    }
+    
+    .head {
+        position: absolute;
+        top: 110px;
+        left: 115px;
+        z-index: 1;
+    }
+    
+    .shock {
+        position: absolute;
+        top: 110px;
+        left: 115px;
+    }
+    
+    .head:hover {
+        opacity: 0;
+    }
+    
+    .bod {
+        position: absolute;
+        top: 160px;
+        left: 122px;
+    }
+    
+    .nbody {
+        position: absolute;
+        top: 160px;
+        left: 122px;
+        opacity: 0;
+    }
+    
+    .nbody:hover {
+        animation: fade .4s alternate infinite ease-in-out;
+        -webkit-animation: fade .4s alternate infinite ease-in-out;
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .leftarm {
+        position: absolute;
+        top: 170px;
+        left: 107px;
+        transform: rotateY(180deg) rotatez(-10deg);
+        -webkit-transform: rotateY(180deg) rotatez(-10deg);
+        -moz-transform: rotateY(180deg) rotatez(-10deg);
+        -ms-transform: rotateY(180deg) rotatez(-10deg);
+        -o-transform: rotateY(180deg) rotatez(-10deg);
+    }
+    
+    .nlarm {
+        position: absolute;
+        top: 170px;
+        left: 107px;
+        transform: rotateY(180deg) rotateZ(-10deg);
+        -webkit-transform: rotateY(180deg) rotateZ(-10deg);
+        -moz-transform: rotateY(180deg) rotateZ(-10deg);
+        -ms-transform: rotateY(180deg) rotateZ(-10deg);
+        -o-transform: rotateY(180deg) rotateZ(-10deg);
+        opacity: 0;
+    }
+    
+    .nlarm:hover {
+        animation: fade .4s alternate infinite ease-in-out;
+        -webkit-animation: fade .4s alternate infinite ease-in-out;
+    }
+    
+    .rightarm {
+        position: absolute;
+        top: 170px;
+        right: 115px;
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -o-transform: rotateZ(-10deg);
+    }
+    
+    .rarm {
+        position: absolute;
+        top: 170px;
+        right: 115px;
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -o-transform: rotateZ(-10deg);
+        opacity: 0;
+    }
+    
+    .rarm:hover {
+        animation: fade .4s alternate infinite ease-in-out;
+        -webkit-animation: fade .4s alternate infinite ease-in-out;
+    }
+    
+    .leftleg {
+        position: absolute;
+        top: 195px;
+        left: 121px;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    
+    .lleg {
+        position: absolute;
+        top: 195px;
+        left: 121px;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        opacity: 0;
+    }
+    
+    .lleg:hover {
+        animation: fade .4s alternate infinite ease-in-out;
+        -webkit-animation: fade .4s alternate infinite ease-in-out;
+    }
+    
+    .rightleg {
+        position: absolute;
+        top: 194px;
+        right: 130px;
+    }
+    
+    .rleg {
+        position: absolute;
+        top: 194px;
+        right: 130px;
+        opacity: 0;
+    }
+    
+    .rleg:hover {
+        animation: fade .4s alternate infinite ease-in-out;
+        -webkit-animation: fade .4s alternate infinite ease-in-out;
+    }
+    
+    .stat {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        height: 120px;
+        width: 270px;
+        background: rgba(0, 235, 0, 0.3);
+    }
+    
+    .str {
+        position: absolute;
+        left: 12px;
+        color: black;
+    }
+    
+    .hp {
+        position: absolute;
+        top: 30px;
+        left: 12px;
+        color: black;
+    }
+    
+    .mp {
+        position: absolute;
+        top: 50px;
+        left: 12px;
+        color: black;
+    }
+    
+    .skill {
+        position: absolute;
+        top: 70px;
+        left: 12px;
+        color: black;
+    }
+    
+    .strdata {
+        position: absolute;
+        top: 7px;
+        left: 80px;
+        color: red;
+    }
+    
+    .hpdata {
+        position: absolute;
+        top: 27px;
+        left: 80px;
+        color: red;
+    }
+    
+    .mpdata {
+        position: absolute;
+        top: 47px;
+        left: 80px;
+        color: purple;
+    }
+    
+    .skilldata {
+        position: absolute;
+        top: 67px;
+        left: 80px;
+        color: deeppink;
+    }
+    
+    .sword {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        animation: swing 500ms alternate infinite ease-in-out;
+        -webkit-animation: swing 500ms alternate infinite ease-in-out;
+        transform-origin: right;
+    }
+    
+    @keyframes swing {
+        0% {
+            transform: rotateZ(0deg);
+            -webkit-transform: rotateZ(0deg);
+            -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+            -o-transform: rotateZ(0deg);
+        }
+        100% {
+            transform: rotateZ(70deg);
+            -webkit-transform: rotateZ(70deg);
+            -moz-transform: rotateZ(70deg);
+            -ms-transform: rotateZ(70deg);
+            -o-transform: rotateZ(70deg);
+        }
+    }
